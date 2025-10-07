@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>NWJNS - Home</title>
+  <link rel="stylesheet" href="PageStyle.css">
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/bubblegum.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-btn">⏸</button>
+
+  <nav>
+    <a href="index.html">
+      <img src="images/logo.png" id="logo">
+    </a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <div class="home-content">
+    <img src="images/1.png" id="middle-logo">
+  </div>
+
+  <script>
+    const music = document.getElementById("bg-music")
+    const btn = document.getElementById("music-btn")
+    music.volume = 0.2
+    btn.addEventListener("click", () => {
+      if (music.paused) {
+        music.play()
+        btn.textContent = "⏸"
+      } else {
+        music.pause()
+        btn.textContent = "▶"
+      }
+    })
+  </script>
+</body>
+</html>
