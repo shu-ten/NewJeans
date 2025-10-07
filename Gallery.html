@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NWJNS - Gallery</title>
+    <link rel="stylesheet" href="PageStyle.css">
+</head>
+<body>
+<audio id="bg-music" loop>
+  <source src="assets/hurt.mp3" type="audio/mpeg">
+</audio>
+<button id="music-btn">▶</button>
+
+<script>
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+
+  music.volume = 0.2;
+
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = "⏸";
+    } else {
+      music.pause();
+      btn.textContent = "▶";
+    }
+  });
+</script>
+    <nav>
+        <a href="home.html">
+            <img src="images/logo.png" id="logo">
+        </a>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="gallery-container">
+            <img src="images/41.png" class="about-image">
+        <img src="images/bunnies.png" alt="Sticker" class="gallery-sticker">
+
+        <div class="gallery-grid">
+            <div class="gallery-item tall"><img src="images/album2.jpeg" alt="Gallery 1"></div>
+            <div class="gallery-item wide"><img src="images/album3.jpeg" alt="Gallery 2"></div>
+            <div class="gallery-item"><img src="images/album4.jpeg" alt="Gallery 3"></div>
+            <div class="gallery-item"><img src="images/album5.jpeg" alt="Gallery 4"></div>
+
+            <div class="gallery-item wide"><img src="images/album6.jpeg" alt="Gallery 5"></div>
+            <div class="gallery-item tall"><img src="images/album7.jpeg" alt="Gallery 6"></div>
+            <div class="gallery-item"><img src="images/album8.jpeg" alt="Gallery 7"></div>
+            <div class="gallery-item"><img src="images/album9.jpeg" alt="Gallery 8"></div>
+
+            <div class="gallery-item"><img src="images/album10.jpeg" alt="Gallery 9"></div>
+            <div class="gallery-item wide"><img src="images/album11.jpeg" alt="Gallery 10"></div>
+            <div class="gallery-item tall"><img src="images/album12.jpeg" alt="Gallery 11"></div>
+            <div class="gallery-item"><img src="images/album13.jpeg" alt="Gallery 12"></div>
+
+            <div class="gallery-item wide"><img src="images/album14.jpeg" alt="Gallery 13"></div>
+            <div class="gallery-item"><img src="images/album15.jpeg" alt="Gallery 14"></div>
+            <div class="gallery-item"><img src="images/album16.jpeg" alt="Gallery 15"></div>
+            <div class="gallery-item tall"><img src="images/album17.jpeg" alt="Gallery 16"></div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        document.querySelectorAll(".gallery-item img").forEach(img => {
+            img.addEventListener("click", () => {
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
+            });
+        });
+
+        lightbox.addEventListener("click", (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
