@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NWJNS - Music</title>
+    <link rel="stylesheet" href="PageStyle.css">
+</head>
+<body>
+<audio id="bg-music" loop>
+  <source src="assets/hypeboy.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-btn">▶</button>
+
+<script>
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+ music.volume = 0.1;
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = "⏸";
+    } else {
+      music.pause();
+      btn.textContent = "▶";
+    }
+  });
+</script>
+    <nav>
+        <a href="index.html">
+            <img src="images/logo.png" id="logo">
+        </a>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="music.html" class="active">Music</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="music-container">
+  
+        <img src="images/4.png" class="about-image">
+
+        <div class="music-columns">
+            
+
+            <div class="music-column">
+                <h2>Albums / EPs</h2>
+                <div class="album-grid">
+
+
+                    <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/ALBUM 1.jpeg">
+                            </div>
+                            <div class="album-back">
+                                <h2>New Jeans (EP)</h2>
+                                <p>2022</p>
+                                <ul>
+                                    <li><a href="https://music.youtube.com/watch?v=kdOS94IjzzE&si=mKbLCi_vEV85Szb5" target="_blank">Attention</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=ghrlZIMDzbM&si=6rGty8aWFykABkpm" target="_blank">Hype Boy</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=0M4QMVQJRsw&si=jVvnnCRSygSiLCZV" target="_blank">Cookie</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=8QWtOgBJZNc&si=H5H7HLBqTGcO8UfK" target="_blank">Hurt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/GET UP.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>Get Up (EP)</h2>
+                                <p>2023</p>
+                                <ul>
+                                    <li><a href="https://music.youtube.com/watch?v=Krr2u8BUtLw&si=pYblVHaXDn1Y5dHT" target="_blank">New Jeans</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=n7ePZLn9_lQ&si=_35E8F7FigSTT1GS" target="_blank">Super Shy</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=XCkpalH6Ppk&si=OPeS6lnrewrdYPMp" target="_blank">ETA</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=-jEmhjZr8RE&si=DSrajNQHpcDWIQn0" target="_blank">Cool With You</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=SXM1q0CTfew&si=4mHQkUrgEyXoxcq9" target="_blank">Get Up</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=nFigEiB9P5c&si=SSP1UOuQgfS1qJZu" target="_blank">ASAP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/NJWMX.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>NJWMX</h2>
+                                <p>2023</p>
+                                <ul>
+
+                                    <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_l8GhQoS7kYyuW7Oqnh4HVusIeCJRI8JzQ&si=Rj6lyKNXx-GgE81z" target="_blank">Ditto, OMG, Attention, Hype Boy, Cookie, Hurt, Ditto, OMG, Attention, Hype Boy, Cookie, Hurt (REMIX)</a></li>
+
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                                        <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/how sweet.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>How Sweet</h2>
+                                <p>2024</p>
+                                <ul>
+                                    <li><a href="https://music.youtube.com/watch?v=vrM2mrI83uk&si=GNRiMgOhzPOYJYR2" target="_blank">How Sweet</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=GV_HP7yoIyc&si=KAv5OdP81K8GitQD" target="_blank">Bubble Gum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/supernatural.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>Supernatural</h2>
+                                <p>2024</p>
+                                <ul>
+                                    <li><a href="https://music.youtube.com/watch?v=8yXGI3kcLsw&si=OlTEM9L0MGTKY0ds" target="_blank">Supernatural</a></li>
+                                    <li><a href="https://music.youtube.com/watch?v=B1Vv1zQyR04&si=qlGp6dBGRywVyr97" target="_blank">Right Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+            
+
+            <div class="music-column">
+                <h2>Singles</h2>
+                <div class="album-grid">
+
+                    <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/ditto.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>Ditto</h2>
+                                <p>2022</p>
+                                <ul>
+                                
+                                    <li><a href="https://music.youtube.com/watch?v=-g9I2neQR7w&si=3U_IwRJQCFhX78cS" target="_blank">Ditto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/OMG.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>OMG</h2>
+                                <p>2023</p>
+                                <ul>
+                                
+                                    <li><a href="https://music.youtube.com/watch?v=2Kff0U8w-aU&si=hsibqYwQ9sjXs_7d" target="_blank">OMG</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/zero.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>Zero</h2>
+                                <p>2023</p>
+                                <ul>
+                                
+                                    <li><a href="https://music.youtube.com/watch?v=pMVpKyipkWU&si=t85NZg_cHfV_LdLn" target="_blank">Zero</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/A Time Called You (Original Soundtrack From the Netflix Series).jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>A Time Called You (OST)</h2>
+                                <p>2023</p>
+                                <ul>
+                                
+                                    <li><a href="https://music.youtube.com/watch?v=BEi3tU61ixc&si=aNjO3pzbHa9IpOx5" target="_blank">Beautiful Restriction</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                                            <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/GODS.webp">
+                            </div>
+                            <div class="album-back">
+                                <h2>Gods (New Jeans X League of Legends)</h2>
+                                <p>2023</p>
+                                <ul>
+                                
+                                    <li><a href="https://music.youtube.com/watch?v=lzfyoYEGvM0&si=QM860h2vl9xAzkBg" target="_blank">Gods</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                                                                <div class="album-card">
+                        <div class="album-inner">
+                            <div class="album-front">
+                                <img src="images/MY DEMON.jpg">
+                            </div>
+                            <div class="album-back">
+                                <h2>NewJeans x MY DEMON (OST)</h2>
+                                <p>2023</p>
+                                <ul>
+                                
+                                    <li><a href="https://music.youtube.com/watch?v=AmzIk-4Fj2s&si=h6LPyCEpXKZf5GXu" target="_blank">Our Night is more beautiful than your Day</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

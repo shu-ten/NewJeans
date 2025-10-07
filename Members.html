@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NWJNS - Members</title>
+    <link rel="stylesheet" href="PageStyle.css">
+</head>
+<body>
+<audio id="bg-music" loop>
+  <source src="assets/supershy.mp3" type="audio/mpeg">
+</audio>
+<button id="music-btn">▶</button>
+<script>
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+ music.volume = 0.2;
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = "⏸";
+    } else {
+      music.pause();
+      btn.textContent = "▶";
+    }
+  });
+</script>
+    <nav>
+        <a href="index.html">
+            <img src="images/logo.png" id="logo">
+        </a>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html" class="active">Members</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="members-container">
+   <center> <img src="images/35.png" width="300" height="300"></center>
+
+        <div class="member-card">
+            <div class="member-inner">
+                <div class="member-front">
+                    <img src="images/minji.webp">
+                </div>
+                <div class="member-back">
+                    <img src="images/P MINJI.png">
+                </div>
+            </div>
+            <img src="images/N MINJI.png" class="member-name">
+            <p class="member-info">Minji (민지) was born in Chuncheon, Gangwon, South Korea. Her nickname is “teddy bear,” and her favorite nickname is “gomaji,” which means bear-puppy. Although the group does not have an official leader, she is considered the de facto leader. She also enjoys eating ice cream.</p>
+        </div>
+
+
+        <div class="member-card">
+            <div class="member-inner">
+                <div class="member-front">
+                    <img src="images/hanni.webp">
+                </div>
+                <div class="member-back">
+                    <img src="images/P HANNI.png">
+                </div>
+            </div>
+            <img src="images/N HANNI.png" class="member-name">
+            <p class="member-info">Hanni (하니) was born in Melbourne, Victoria, Australia. She can speak Vietnamese, English, and Korean. When she was younger, she was a fan of One Direction. Hanni also plays the ukulele. Some of the things she dislikes are apples that aren’t crunchy and spiders. Her charming point is her short hair. Her nickname is “Pigtails,” though her favorite nickname is “Pham.”</p>
+        </div>
+        <div class="member-card">
+            <div class="member-inner">
+                <div class="member-front">
+                    <img src="images/danielle.webp">
+                </div>
+                <div class="member-back">
+                    <img src="images/P DANIELLE.png">
+                </div>
+            </div>
+            <img src="images/N DANIELLE.png" class="member-name">
+            <p class="member-info">Danielle (다니엘) was born in Newcastle, New South Wales, Australia. Her father is Australian, and her mother is Korean. She can speak both English and Korean. She loves surfing and wants to start a surfing club with Hanni. Her hobbies include drawing, painting, listening to music, swimming, and talking with the members. She is known as the “vitamin D” of NewJeans. Her specialties are hugging, composing, and drawing.</p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-inner">
+                <div class="member-front">
+                    <img src="images/HAERIN.webp">
+                </div>
+                <div class="member-back">
+                    <img src="images/P HAERIN.png">
+                </div>
+            </div>
+            <img src="images/N HAERIN.png" class="member-name">
+            <p class="member-info">Haerin (해린) was born in Dongjak-gu, Seoul, South Korea. She can speak both English and Korean. Her nickname is “Kitty Kang.” She is a very curious person and enjoys learning new things. Haerin has a quiet and kind personality and tends to think a lot before answering. She likes wearing caps. She believes the animal she resembles most is a cat. Her specialty is finding and listening to music.</p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-inner">
+                <div class="member-front">
+                    <img src="images/hyein.webp">
+                </div>
+                <div class="member-back">
+                    <img src="images/P HYEIN.png">
+                </div>
+            </div>
+            <img src="images/N HYEIN.png" class="member-name">
+            <p class="member-info">Hyein (혜인) was born in Incheon, South Korea. She can speak both Korean and English. Her hobbies include taking walks, photographing mostly the sky and the members, and looking up movies. Her favorite fruit is strawberries. She loves puppies, especially retrievers and bichons. Hyein enjoys sports and played soccer in elementary school. Her nickname is “Faucet” because she cries easily and is very emotional.</p>
+        </div>
+
+    </div>
+      </div>
+<p><br></p>
+    </div>
+
+</body>
+</html>
